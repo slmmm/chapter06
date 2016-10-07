@@ -1,6 +1,5 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -47,6 +46,7 @@ if (app.get('env') === 'development') {
       message: err.message,
       error: err
     });
+	next();
   });
 }
 
