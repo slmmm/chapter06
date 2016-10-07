@@ -3,7 +3,7 @@
     "rules": {
         "no-unused-vars": [2, { "args": "after-used" }],
         "quotes": [2, "single"],
-        "semi": [2, "always"],
-		"strict": [2, "safe"]
+        "semi": [2, "always"]
+//		"strict": [2, "safe"]
     }
 }

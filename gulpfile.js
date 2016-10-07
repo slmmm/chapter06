@@ -53,7 +53,8 @@ gulp.task('test', ['lint-test', 'instrument'], function() {
         .pipe(mocha())
         .pipe(istanbul.writeReports())
         .pipe(istanbul.enforceThresholds({
-            thresholds: { statements: 70, branches: 50 }
+            thresholds: { global: 90 }
+//            thresholds: { statements: 70, branches: 50 }
         }));
 });
 
